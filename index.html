@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+
+body {
+            background-color: rgb(25, 27, 28); 
+        }
+        
+        .header {
+            background-color: rgb(63, 62, 106);
+            padding: 20px;
+            text-align: left;
+        }
+
+        .footer {
+            background-color: rgb(42, 48, 87);
+            padding: 10px;
+            text-align: center;
+            color: rgb(116, 189, 206);
+            width: 100%;
+            position: relative;
+           
+
+        }
+
+        .profile-pic {
+            text-align: center;
+        }
+
+        .profile-pic img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .description {
+            text-align: left;
+            padding: 20px;
+        }
+
+        .card {
+            border-radius: 15px;
+            margin: 20px;
+            background-color: rgb(69, 77, 100);
+            
+        }
+
+        .card-text {
+        color: rgb(180, 214, 254); /* Change this to your desired text color */
+    }
+
+        .card:hover {
+            border-radius: 15px;
+            margin: 20px;
+            background-color: rgb(69, 77, 100);
+        box-shadow: 0 4px 8px rgb(186, 188, 255);
+        
+    }
+
+        .card img {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .btn-img {
+        transition: box-shadow 0.3s;
+    }
+
+    .btn-img:hover {
+        box-shadow: 0 0 10px rgba(150, 200, 254, 0.748);
+    }
+
+    .profile-pic{
+        padding-top: 20px;
+        text-align: left;
+        
+    }
+
+    .container-welcome-message{
+        position: absolute;
+        top: 150px; 
+        width: 100%; 
+        text-align: center; 
+    }
+
+   
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 50%; }
+    }
+
+    .typing-animation {
+        overflow: hidden;
+        border-right: 2px solid white;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation: typing 3s steps(25, end), blink-caret 0.5s step-end infinite alternate;
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: rgb(11, 152, 102); }
+    }
+    
+    </style>
+</head>
+<body>
+
+    <div class="header text-left" style="color: rgb(160, 178, 196);">
+        <h1>My Portfolio</h1>
+    </div>
+
+    <div class="container-welcome-message">
+            <div class="col-md-12 align-self-center text-center" style="margin-top: 50px;" >
+                <h2  class="typing-animation" style="color:rgb(181, 186, 217); font-size: 50px;">Welcome to my Portfolio</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        
+        <div class="row">
+            <div class="col-md-12 profile-pic">
+                <img src="profilepic.png" alt="Profile Picture">
+            </div>
+        </div>
+
+        <div class="row text-left">
+            <div class="col-md-12 mt-5">
+                <h2 style="color:rgb(143, 145, 156)">About me</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 description">
+                <p style="color:rgb(185, 216, 236); font-size: 25px;">My name is Christian Lloyd N. Gulmatico, a Student in the University of Pangasinan 
+                 I am in the CITE collage and taking an IT course. I love learning new things everyday, learning hard things and challenging myself 
+                to reach, and even push across beyond my limits to know what I can do. and what I cannot do, I will push myself as much as I can until I can do them and 
+            will suceed. </p>
+
+
+            <p style="color:rgb(185, 216, 236); font-size: 25px;">I started my collage Journey over 2 years ago. and I am excited to continue this challenging but worthwhile Journey
+            Below are my proud accomplishments and succesful challenges. I will do my best to add to these projects though my years in collage. and add more projects as well.   </p>
+            </div>
+        </div>
+
+        <div class="row text-left">
+            <div class="col-md-12 mt-5">
+                <h2 style="color:rgb(143, 145, 156)">1st year projects</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="icons8-calculator-100.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text" style="font-size: 25px;">Python Calculator</p>
+                        <p class="card-text" style="font-size: 15px;">One of my first projects is a Python Calculator, operated using the Python terminal.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="icons8-tic-tac-toe-100.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text" style="font-size: 25px;">Python Tic Tac Toe</p>
+                        <p class="card-text" style="font-size: 15px;">My final project for my freshman year was a Tic Tac toe game with a twist!  </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="icons8-menu-96.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text" style="font-size: 25px;">Python Menu</p>
+                        <p class="card-text" style="font-size: 15px;">I created a Python menu to order, and calculate the price of all the products ordered</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-left">
+                <div class="col-md-12 mt-5">
+                    <h2 style="color:rgb(143, 145, 156)">2nd year projects</h2>
+                </div>
+            </div>
+    
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="GamerGearlogo.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: 25px;">Gamer Gear Haven</p>
+                        <p class="card-text" style="font-size: 15px;">A gaming store application made using Android studio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="sign-in.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: 25px;">Laravel Sign-in Page</p>
+                        <p class="card-text" style="font-size: 15px;">A sign-in page made using the Laravel framework. It has a password recovery system as well.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="pngwing.com.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text" style="font-size: 25px;">Postman API Practice</p>
+                        <p class="card-text" style="font-size: 15px;">A laravel app that has Postman API functions, as a practice for future applications I will make.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center mt-5">
+                <h2 style="color:rgb(143, 145, 156)">Contact Me</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center">
+                    <a href="https://www.facebook.com/christianlloyd.gulmatico/"><img src="icons8-facebook-30.png" alt="Button 1" class="btn-img"></a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="https://github.com/Christian-LLoyd"><img src="icons8-github-30.png" alt="Button 2" class="btn-img"></a>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="https://www.linkedin.com/in/christian-lloyd-gulmatico-b3600020b/"><img src="icons8-linked-in-48.png" alt="Button 3" class="btn-img"></a>
+                </div>
+            </div>
+        </div>
+
+    
+
+    <div class="footer">
+        <p>Footer Content</p>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
